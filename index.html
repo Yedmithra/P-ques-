@@ -10,17 +10,17 @@
 
   :root {
     --gold:       #D4A017;
-    --gold-light: #F2CC6B;
+    --gold-light: #e8b73b;
     --gold-pale:  #FFF3C4;
-    --cream:      #FFF9EE;
-    --night:      #080610;
+    --cream:      #d73030;
+    --night:      #FFFFFF;
     --coral:      #C94040;
-    --white:      #FFFFFF;
+    --white:      #C94040;
   }
 
   html, body {
     width: 100%; min-height: 100vh;
-    background: #000;
+    background: linear-gradient(to right, #807777, #100e0e);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +48,7 @@
     height: 1123px;
     transform-origin: top left;
     overflow: hidden;
-    background: var(--night);
+    background: #FFFFFF;
     font-family: "Cormorant Garamond", serif;
   }
 
@@ -56,9 +56,9 @@
   .bg-gradient {
     position: absolute; inset: 0;
     background:
-      radial-gradient(ellipse 60% 55% at 50% 38%, #3B1F0A 0%, transparent 70%),
-      radial-gradient(ellipse 90% 60% at 50% 0%,  #1C0A00 0%, transparent 60%),
-      linear-gradient(180deg, #080205 0%, #0E0818 40%, #060410 100%);
+  radial-gradient(ellipse 60% 45% at 50% 20%, #FFF8E7 0%, transparent 70%),
+  radial-gradient(ellipse 90% 50% at 50% 0%, #FFF3CC 0%, transparent 60%),
+  linear-gradient(180deg, #FFFDF5 0%, #FFF9EE 60%, #FFF5E0 100%);
   }
 
   .bg-grain {
@@ -100,7 +100,7 @@
     position: absolute;
     width: 480px; height: 480px;
     top: -20px; left: 50%; transform: translateX(-50%);
-    background: radial-gradient(circle, rgba(212,160,23,.55) 0%, rgba(212,160,23,.2) 30%, transparent 70%);
+    background: radial-gradient(circle, rgba(212,160,23,.35) 0%, transparent 70%);
     animation: pulseGlow 4s ease-in-out infinite alternate;
     filter: blur(2px);
   }
@@ -108,7 +108,7 @@
     position: absolute;
     width: 700px; height: 380px;
     top: 60px; left: 50%; transform: translateX(-50%);
-    background: radial-gradient(ellipse, rgba(255,230,150,.15) 0%, transparent 70%);
+    background: radial-gradient(ellipse, rgba(212,160,23,.12) 0%, transparent 70%);
     animation: pulseGlow 6s ease-in-out infinite alternate-reverse;
   }
   @keyframes pulseGlow {
@@ -231,12 +231,12 @@
   }
   .quote-text {
     font-family: "Cormorant Garamond", serif; font-style:italic;
-    font-size:17px; font-weight:300; color:rgba(255,249,238,.65);
+    font-size:17px; font-weight:300; color:rgba(235, 27, 27, 0.792);
     line-height:1.7; letter-spacing:.5px;
   }
   .quote-ref {
     font-family:"Cinzel",serif; font-size:10px;
-    letter-spacing:3px; color:var(--gold); opacity:.55; margin-top:8px;
+    letter-spacing:3px; color:var(--coral); opacity:.55; margin-top:8px;
   }
 
   /* Bottom */
@@ -248,11 +248,11 @@
   }
   .jme-sig {
     font-family:"Cinzel",serif; font-size:10px; letter-spacing:5px;
-    color:var(--gold); opacity:.7; text-transform:uppercase;
+    color:var(--coral); opacity:.7; text-transform:uppercase;
   }
   .jme-sub {
     font-family:"Cormorant Garamond",serif; font-size:12px;
-    font-style:italic; color:rgba(255,249,238,.35); letter-spacing:2px;
+    font-style:italic; color:rgba(232, 17, 24, 0.773); letter-spacing:2px;
   }
 
   /* Particles */
